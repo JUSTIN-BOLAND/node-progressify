@@ -3,7 +3,7 @@ progressify
 
 Hand-drawn progress bars for your webapps with browserify
 
-![Computing... 80%](/images/computing.png)
+![Computing... 80%](https://github.com/substack/node-progressify/raw/master/images/computing.png)
 
 example
 =======
