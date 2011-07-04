@@ -40,13 +40,14 @@ module.exports = function () {
         .appendTo(remaining)
     ;
     
-    div.fraction = function (n) {
+    var self = {};
+    self.fraction = function (n) {
         if (n === undefined) return complete / 100;
         else return div.percent(Math.floor(n * 100));
     };
     
     var complete = 0;
-    div.percent = function (n) {
+    self.percent = function (n) {
         if (n === undefined) return complete;
         
         if (n < 0) n = 0;
@@ -61,5 +62,11 @@ module.exports = function () {
         return div;
     };
     
-    return div;
+    self.element = div;
+    self.appendTo = function () {
+        div.appendTo.apply(div, arguments);
+        return self;
+    };
+    
+    return self;
 };

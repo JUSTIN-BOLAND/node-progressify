@@ -2,8 +2,7 @@ var progressify = require('progressify');
 var $ = require('jquery-browserify');
 
 $(window).ready(function () {
-    var p = progressify();
-    p.appendTo($('#p'));
+    var p = progressify().appendTo($('#p'));
     
     var iv0 = setInterval(function () {
         p.percent(p.percent() + 1);
