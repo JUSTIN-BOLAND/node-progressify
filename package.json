@@ -1,0 +1,31 @@
+{
+    "name" : "progressify",
+    "version" : "0.0.0",
+    "description" : "Hand-drawn progress bars for your webapps",
+    "main" : "index.js",
+    "browserify" : "browser.js",
+    "directories" : {
+        "lib" : ".",
+        "example" : "example",
+        "test" : "test"
+    },
+    "dependencies" : {
+        "connect" : "1.5.x"
+    },
+    "repository" : {
+        "type" : "git",
+        "url" : "http://github.com/substack/node-progressify.git"
+    },
+    "keywords" : [
+        "progress",
+        "bar",
+        "browserify"
+    ],
+    "author" : {
+        "name" : "James Halliday",
+        "email" : "mail@substack.net",
+        "url" : "http://substack.net"
+    },
+    "license" : "MIT/X11",
+    "engine" : { "node" : ">=0.4" }
+}
