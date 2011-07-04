@@ -53,9 +53,10 @@ module.exports = function () {
         if (n < 0) n = 0;
         if (n > 100) n = 100;
         complete = n;
+        percent.text(n + '%');
         
-        percent.ready(function () {
-            finished.width(Math.floor(n / 100 * percent.width()));
+        div.ready(function () {
+            finished.width(Math.floor(n / 100 * remaining.width()));
         });
         
         return div;

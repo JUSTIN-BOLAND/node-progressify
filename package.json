@@ -12,6 +12,9 @@
     "dependencies" : {
         "connect" : "1.5.x"
     },
+    "dev-dependencies" : {
+        "jquery-browserify" : "1.6.x"
+    },
     "repository" : {
         "type" : "git",
         "url" : "http://github.com/substack/node-progressify.git"
