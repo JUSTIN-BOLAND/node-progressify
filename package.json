@@ -10,9 +10,7 @@
         "test" : "test"
     },
     "dependencies" : {
-        "connect" : "1.5.x"
-    },
-    "dev-dependencies" : {
+        "connect" : "1.5.x",
         "jquery-browserify" : "1.6.x"
     },
     "repository" : {
