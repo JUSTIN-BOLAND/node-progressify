@@ -51,10 +51,24 @@ browser-side
 var progressify = require('progressify');
 ````
 
-var p = progressify()
----------------------
+var p = progressify(opts={})
+----------------------------
 
-Create a new progress object.
+Create a new progress object, loading resources from `opts.mount`.
+
+To mount the resources someplace special you can do
+
+````javascript
+var p = progressify({ mount : '/special' })
+````
+
+in the browser and
+
+````javascript
+app.use('/special', require('progressify'));
+````
+
+Otherwise the resources are just mounted at '/'.
 
 p.appendTo(...)
 ---------------

@@ -1,6 +1,6 @@
 {
     "name" : "progressify",
-    "version" : "0.0.0",
+    "version" : "0.0.1",
     "description" : "Hand-drawn progress bars for your webapps",
     "main" : "index.js",
     "browserify" : "browser.js",

@@ -1,6 +1,9 @@
 var $ = require('jquery-browserify');
 
-module.exports = function () {
+module.exports = function (opts) {
+    if (!opts) opts = {};
+    if (!opts.mount) opts.mount = '';
+    
     var div = $('<div>').css({
         'margin-right' : '5px',
         height : '40px',
@@ -30,13 +33,13 @@ module.exports = function () {
         .appendTo(div)
     ;
     var full = $('<img>')
-        .attr('src', '/progressify/full.png')
+        .attr('src', opts.mount + '/_progressify_full.png')
         .appendTo(finished)
     ;
     
     var remaining = $('<div>').appendTo(div);
     var empty = $('<img>')
-        .attr('src', '/progressify/empty.png')
+        .attr('src', opts.mount + '/_progressify_empty.png')
         .appendTo(remaining)
     ;
     
