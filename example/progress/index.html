@@ -1,8 +1,20 @@
 <html>
   <head>
     <script type="text/javascript" src="/browserify.js"></script>
+    <style type="text/css">
+      #msg {
+        height: 1em;
+        margin-bottom: 0.5em;
+        font-weight: bold;
+        font-family: monospace;
+      }
+    </style>
   </head>
   <body>
+    <div id="msg">
+      Computing...
+      <span id="done">_</span>
+    </div>
     <div id="p"></div>
   </body>
 </html>

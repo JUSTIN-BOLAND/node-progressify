@@ -5,8 +5,22 @@ $(window).ready(function () {
     var p = progressify();
     p.appendTo($('#p'));
     
-    var iv = setInterval(function () {
-        var dx = Math.floor(Math.random() * 3);
-        p.percent(p.percent() + dx);
-    }, 100);
+    var iv0 = setInterval(function () {
+        p.percent(p.percent() + 1);
+        
+        if (p.percent() === 100) {
+            clearInterval(iv0);
+            clearInterval(iv1);
+            $('#done').text('done');
+        }
+    }, 50);
+    
+    var iv1 = setInterval(function () {
+        if ($('#done').text() === ' ') {
+            $('#done').text('_');
+        }
+        else {
+            $('#done').text(' ');
+        }
+    }, 500);
 });

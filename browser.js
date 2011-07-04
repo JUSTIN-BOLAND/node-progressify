@@ -2,7 +2,6 @@ var $ = require('jquery-browserify');
 
 module.exports = function () {
     var div = $('<div>').css({
-        float : 'right',
         'margin-right' : '5px',
         height : '40px',
         width : '200px'
@@ -12,7 +11,7 @@ module.exports = function () {
         .text('0%')
         .css({
             position : 'absolute',
-            width : '150px',
+            width : '190px',
             'font-weight' : 'bold',
             'z-index' : 10,
             'text-align' : 'center',
